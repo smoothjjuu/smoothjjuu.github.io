@@ -1,0 +1,12 @@
+@import "../_variables.scss";
+
+#themeChanger{
+    cursor: pointer;
+    position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 40px;
+    margin: 1.5rem auto;
+}

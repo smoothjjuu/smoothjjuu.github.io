@@ -1,0 +1,28 @@
+@import "../_variables.scss";
+
+:root{
+    --color-page-background: #{$color-black};
+    --color-text: #{$color-white};
+}
+
+.dark{
+    --color-page-background: #{$color-white};
+    --color-text: #{$color-black};
+    // --color-border:
+}
+
+body{
+    background-color: var(--color-page-background);
+    color: var(--color-text);
+    
+    @media (min-width: $desktop){
+        padding-top: 0;
+        padding-left: 17rem;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 6rem 2rem !important;
+    max-width: 75rem;
+}

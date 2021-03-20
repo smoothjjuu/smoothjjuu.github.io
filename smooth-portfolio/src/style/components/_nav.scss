@@ -1,0 +1,45 @@
+@import "../_variables.scss";
+
+nav{
+    background-color: indigo;
+    // background-color: var(--background-color);
+    @media (min-width: $desktop){
+        width: 17rem;
+        height: 100vh;        
+        flex-grow: 0;
+    }
+}
+
+.navbar-collapse{
+    
+    @media (min-width: $desktop){
+        flex-grow: 0 !important;
+        margin-bottom: auto;
+        text-align: center;
+    }
+}
+
+.navbar-brand{
+    @media (min-width: $desktop){
+    display: flex !important;
+    padding: 0.5rem !important;
+    margin: auto auto 0 !important;
+    }
+}
+
+.img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    @media (min-width: $desktop){
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+.nav-item{
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}

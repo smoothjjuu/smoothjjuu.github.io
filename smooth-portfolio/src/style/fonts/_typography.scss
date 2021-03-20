@@ -1,0 +1,33 @@
+@import "../_variables.scss";
+
+body{
+    color: #868e96 !important;
+}
+h1, h2, h3, h4, h5
+{    
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+    font-family: $main-font, sans-serif;
+}
+
+h1{
+    font-size: 6rem !important;
+    line-height: 5.5rem !important;
+}
+
+h2{
+    font-size: 3.5rem !important;
+}
+
+.subheading{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $main-font, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.resume-date{
+    min-width: 18rem;
+}

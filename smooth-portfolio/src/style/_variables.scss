@@ -1,0 +1,34 @@
+//Global variants
+
+//Dark mode
+$color-black: rgb(0,0,0);
+$primary-dark: #0075ffd4;
+$font-dark: black;
+$color-gray-dark: rgb($color-black, .15);
+
+//Light mode
+$color-white: rgb(255,255,255);
+$primary-light: #0075ffd4;
+$font-light: white;
+$color-gray-dark: rgb($color-white, .15);
+
+//Typography
+$main-font: Saira Extra Condensed;
+//Other variables
+
+//Media queries
+$mobile: 767px;
+$tablet: 768px;
+$desktop: 992px;
+$desktop-lg: 1200px;
+
+.dark-mode{
+    --background-color : black;
+    --primary-color: $primary-dark;
+    --font-color: $font-dark;
+}
+.light-mode{
+    --background-color : white;
+    --primary-color: $primary-light;
+    --font-color: $font-light;
+}
