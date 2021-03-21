@@ -23,14 +23,13 @@
           <a class="nav-link" routerLink="/skills">skills</a>
         </li>
         <li class="nav-item" (click)="toggleCollapsed()" >
-          <a class="nav-link" href="http://www.naver.com" target="_blank">RESUME</a>
+          <a class="nav-link" href="https://docs.google.com/document/d/10zegpAEEjkmtVcuJvw8hBJDtk0V5DWAwhTML1-h6yAw/edit?usp=sharing" target="_blank">RESUME</a>
         </li>  
         <label class="themeChanger text-center" (click)="toggleCollapsed()" >  
           <mat-checkbox type="checkbox" 
           id="darkMode" 
           [checked]="isThemeDark | async"
           (change)="toggleDarkTheme($event)">
-          <i class="fas fa-adjust"></i>
           </mat-checkbox>Change theme
         </label>    
       </ul>  

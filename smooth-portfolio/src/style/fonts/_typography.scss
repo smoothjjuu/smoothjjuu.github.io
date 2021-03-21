@@ -26,6 +26,9 @@ h2{
 p{    
     color: #868e96 !important;
 }
+.nav-link{    
+    color: #868e96 !important;
+}
 a:hover{
     color: var(--font-color);
 }
@@ -37,7 +40,4 @@ a:hover{
 .email{
     color: var(--primary-color);
 
-}
-.resume-date{
-    min-width: 18rem;
 }

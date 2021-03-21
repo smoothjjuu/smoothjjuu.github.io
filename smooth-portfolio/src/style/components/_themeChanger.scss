@@ -10,7 +10,7 @@
 
 .themeChanger{
     float: right;
-    background-color: var(--background-color);
+    background-color: #868e96 !important;
     color: rgba(var(--font-color),0.3);
     margin-top: auto;
     @media (min-width: $desktop){
