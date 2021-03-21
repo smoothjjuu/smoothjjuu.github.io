@@ -9,8 +9,7 @@ nav{
     }
 }
 
-.navbar-collapse{
-    
+.navbar-collapse{    
     @media (min-width: $desktop){
         flex-grow: 0 !important;
         margin-bottom: auto;

@@ -9,6 +9,7 @@ import { SkillsPortfolioComponent } from './skills-portfolio/skills-portfolio.co
 import { EduPortfolioComponent } from './edu-portfolio/edu-portfolio.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     NgbModule,
     MatCheckboxModule,
+    MatSlideToggleModule,
     BrowserAnimationsModule
   ],
   providers: [],

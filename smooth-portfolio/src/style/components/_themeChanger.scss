@@ -8,17 +8,21 @@
     @include content($color-light, $color-dark);
 }
 
-.themeChanger{
-    float: right;
-    background-color: #868e96 !important;
-    color: rgba(var(--font-color),0.3);
+.display{    
     margin-top: auto;
+    align-self: center;
+}
+
+.themeChanger{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
     @media (min-width: $desktop){
         padding:5px 10px;
         margin-bottom: 2rem;
     }
 }
-
-.mat-checkbox-inner-container{
-    display: none !important;
+mat-slide-toggle#darkMode{
+    padding-right:10px;
 }

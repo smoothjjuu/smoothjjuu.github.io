@@ -25,13 +25,16 @@
         <li class="nav-item" (click)="toggleCollapsed()" >
           <a class="nav-link" href="https://docs.google.com/document/d/10zegpAEEjkmtVcuJvw8hBJDtk0V5DWAwhTML1-h6yAw/edit?usp=sharing" target="_blank">RESUME</a>
         </li>  
-        <label class="themeChanger text-center" (click)="toggleCollapsed()" >  
-          <mat-checkbox type="checkbox" 
-          id="darkMode" 
-          [checked]="isThemeDark | async"
-          (change)="toggleDarkTheme($event)">
-          </mat-checkbox>Change theme
-        </label>    
+        <div class="display">
+          <label class="themeChanger">  
+            <mat-slide-toggle
+            id="darkMode"     
+            [checked]="isThemeDark | async"
+            (change)="toggleDarkTheme($event)">
+            </mat-slide-toggle>Change theme
+            <div class="toggle-control"></div>
+          </label>  
+        </div>   
       </ul>  
     </div>
   </nav>

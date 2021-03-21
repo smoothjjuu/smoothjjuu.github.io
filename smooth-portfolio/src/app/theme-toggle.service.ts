@@ -17,7 +17,7 @@ export class ThemeToggleService {
     if (isThemeDark == true) {
       localStorage.setItem('dark', 'true');
       document.body.setAttribute("data-theme", "dark-mode");
-      document.documentElement.style.setProperty('--primary-color', '#007bff87');
+      document.documentElement.style.setProperty('--primary-color', '#2a70bb');
     }else{
       localStorage.setItem('dark', 'false');
       document.body.setAttribute("data-theme", "light-mode");
