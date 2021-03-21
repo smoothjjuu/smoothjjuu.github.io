@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ThemeToggleService } from './theme-toggle.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +11,11 @@ export class AppComponent {
   title = 'smooth-portfolio';
   windowSize : number;
   isCollapsed = true;
+  isThemeDark: Observable<boolean>;
+
+  constructor(
+    private themeService: ThemeToggleService
+  ){}
   
   @HostListener('window: resize',['$event'])
   onResize(event){
@@ -22,5 +29,9 @@ export class AppComponent {
   }
   ngOnInit(){
     this.windowSize = window.innerWidth;
+    this.isThemeDark = this.themeService.isThemeDark;
+  }
+  toggleDarkTheme(checked){
+    this.themeService.setDarkTheme(checked.checked);
   }
 }

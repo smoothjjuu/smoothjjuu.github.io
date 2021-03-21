@@ -1,19 +1,21 @@
 @import "../_variables.scss";
 
-:root{
-    --color-page-background: #{$color-black};
-    --color-text: #{$color-white};
-}
-
-.dark{
-    --color-page-background: #{$color-white};
-    --color-text: #{$color-black};
-    // --color-border:
-}
-
 body{
-    background-color: var(--color-page-background);
-    color: var(--color-text);
+        
+    &.dark-mode{
+        background-color: black;
+        --primary-color: $primary-dark;
+        --font-color: $font-dark;
+        --btn-theme: white;
+    }
+    &.light-mode{
+        --background-color : white;
+        --primary-color: $primary-light;
+        --font-color: $font-light;
+        --btn-theme: black;
+    }
+    background-color: var(--background-color);
+    color: var(--font-color);
     
     @media (min-width: $desktop){
         padding-top: 0;

@@ -26,9 +26,11 @@ $desktop-lg: 1200px;
     --background-color : black;
     --primary-color: $primary-dark;
     --font-color: $font-dark;
+    --btn-theme: white;
 }
 .light-mode{
     --background-color : white;
     --primary-color: $primary-light;
     --font-color: $font-light;
+    --btn-theme: black;
 }

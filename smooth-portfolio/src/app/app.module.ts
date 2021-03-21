@@ -8,6 +8,8 @@ import { ExpPortfolioComponent } from './exp-portfolio/exp-portfolio.component';
 import { SkillsPortfolioComponent } from './skills-portfolio/skills-portfolio.component';
 import { EduPortfolioComponent } from './edu-portfolio/edu-portfolio.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MatCheckboxModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

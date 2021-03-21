@@ -35,3 +35,9 @@
       </div>
     </section>
 </div>
+    <mat-checkbox type="checkbox" 
+          id="darkMode" 
+          [checked]="isThemeDark | async"
+          (change)="toggleDarkTheme($event)">
+      <a class="text-capitalize">Dark Mode</a>
+    </mat-checkbox>
