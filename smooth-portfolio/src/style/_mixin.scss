@@ -1,0 +1,5 @@
+@import "./variables.scss";
+@mixin content($bg-color, $font-color) {
+    background-color: $bg-color;
+    color: $font-color;
+  }

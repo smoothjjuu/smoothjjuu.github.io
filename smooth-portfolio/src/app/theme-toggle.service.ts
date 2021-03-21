@@ -16,10 +16,12 @@ export class ThemeToggleService {
 
     if (isThemeDark == true) {
       localStorage.setItem('dark', 'true');
-      document.body.setAttribute("data-theme", "dark-mode")
+      document.body.setAttribute("data-theme", "dark-mode");
+      document.documentElement.style.setProperty('--primary-color', '#007bff87');
     }else{
       localStorage.setItem('dark', 'false');
-      document.body.setAttribute("data-theme", "light-mode")
+      document.body.setAttribute("data-theme", "light-mode");
+      document.documentElement.style.setProperty('--primary-color', '#007bff');
     }
   }
 }

@@ -1,8 +1,7 @@
 @import "../_variables.scss";
 
 nav{
-    background-color: indigo;
-    // background-color: var(--background-color);
+    background-color: var(--primary-color);
     @media (min-width: $desktop){
         width: 17rem;
         height: 100vh;        
@@ -23,7 +22,7 @@ nav{
     @media (min-width: $desktop){
     display: flex !important;
     padding: 0.5rem !important;
-    margin: auto auto 0 !important;
+    margin: 30vh auto 0 !important;
     }
 }
 
@@ -36,10 +35,26 @@ nav{
         max-height: 10rem;
         border: 0.5rem solid rgba(255, 255, 255, 0.2);
     }
-  }
+}
+
+.navbar-nav {    
+    @media (min-width: $desktop){
+        height: 50vh;
+    }
+}
+
+.nav-header{
+    color: var(--font-color);
+}
 
 .nav-item{
     font-weight: 700;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
+    a{
+        color: rgba(var(--font-color),0.3);
+    }
+    @media (max-width: $desktop){
+        text-align: center;
+    }
 }

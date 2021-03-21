@@ -1,14 +1,10 @@
 @import "../_variables.scss";
 
-body{
-    color: #868e96 !important;
-}
 h1, h2, h3, h4, h5
 {    
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40;
-    font-family: $main-font, sans-serif;
+    font-family: $main-font, sans-serif !important;
 }
 
 h1{
@@ -27,7 +23,21 @@ h2{
     font-size: 1.5rem;
 
 }
+p{    
+    color: #868e96 !important;
+}
+a:hover{
+    color: var(--font-color);
+}
 
+.txt-primary{
+    color: var(--primary-color);
+}
+
+.email{
+    color: var(--primary-color);
+
+}
 .resume-date{
     min-width: 18rem;
 }

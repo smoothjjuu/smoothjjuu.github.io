@@ -1,12 +1,24 @@
 @import "../_variables.scss";
 
-#darkMode{
-    cursor: pointer;
-    position: fixed;
-	bottom: 1rem;
-	right: 1rem;
-    width: 6rem;
-    height: 3rem;
-    border-radius: 40px;
-    margin: 1.5rem auto;
+[data-theme="dark-mode"] {
+    @include content($color-dark, $color-light);
+}
+
+[data-theme="light-mode"] {
+    @include content($color-light, $color-dark);
+}
+
+.themeChanger{
+    float: right;
+    background-color: var(--background-color);
+    color: rgba(var(--font-color),0.3);
+    margin-top: auto;
+    @media (min-width: $desktop){
+        padding:5px 10px;
+        margin-bottom: 2rem;
+    }
+}
+
+.mat-checkbox-inner-container{
+    display: none !important;
 }

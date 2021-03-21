@@ -27,10 +27,12 @@ export class AppComponent {
       this.isCollapsed = !this.isCollapsed;
      }
   }
+
   ngOnInit(){
     this.windowSize = window.innerWidth;
     this.isThemeDark = this.themeService.isThemeDark;
   }
+
   toggleDarkTheme(checked){
     this.themeService.setDarkTheme(checked.checked);
   }
