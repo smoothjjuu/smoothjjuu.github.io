@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ResumePortfolioComponent } from './resume-portfolio/resume-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutPortfolioComponent,
     ExpPortfolioComponent,
     SkillsPortfolioComponent,
-    EduPortfolioComponent
+    EduPortfolioComponent,
+    ResumePortfolioComponent
   ],
   imports: [
     BrowserModule,
