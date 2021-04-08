@@ -1,11 +1,38 @@
 import { Component, HostListener } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ThemeToggleService } from './theme-toggle.service';
-
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('hamburguerX', [
+      state('hamburguer', style({})),
+      state('topX', style({
+        transform: 'rotate(45deg)', 
+        transformOrigin: 'left',
+        margin: '6px'
+      })),
+      state('hide', style({
+        opacity: 0
+      })),
+      state('bottomX', style({
+        transform: 'rotate(-45deg)',
+        transformOrigin: 'left',
+        margin: '6px'
+      })),
+      transition('* => *', [
+        animate('0.2s')
+      ]),
+    ]),
+  ]
 })
 export class AppComponent {
   title = 'smooth-portfolio';

@@ -24,23 +24,19 @@ button{
     background-color: var(--primary-color) !important;
     color: #fff !important;
 }
-#resumePreview{
-    width: 50em;
-    height: 50em;
 
-    @media (max-width: $tablet){
-        width: 45em;
-        height: 45em;
-    }
+#resumePreview{
+    width: 17em;
+    height: 22em;
     
-    @media (max-width: $mobile){
+    @media (min-width: $mobile){
         width: 20em;
         height: 25em;
     }
+    @media (min-width: $tablet){
+        width: 45em;
+        height: 45em;
+    } 
 
-    @media (max-width: $mobile-sm){
-        width: 17em;
-        height: 22em;
-    }
 
 }

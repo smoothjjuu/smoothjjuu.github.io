@@ -6,7 +6,9 @@
       </span>
     </a>
     <button class="navbar-toggler" type="button" (click)="toggleCollapsed()" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
+      <div class="icon-bar" [@hamburguerX]="isCollapsed ? 'hamburguer' : 'topX'"></div>
+      <div class="icon-bar" [@hamburguerX]="isCollapsed ? 'hamburguer' : 'hide'"></div>
+      <div class="icon-bar" [@hamburguerX]="isCollapsed ? 'hamburguer' : 'bottomX'"></div>
     </button>
     <div id="navbarSupportedContent" [ngbCollapse]="isCollapsed" class="collapse navbar-collapse">
       <ul class="flex-lg-column navbar-nav">
