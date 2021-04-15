@@ -38,7 +38,8 @@ export class AppComponent {
   title = 'smooth-portfolio';
   windowSize : number;
   isCollapsed = true;
-  isThemeDark: Observable<boolean>;
+  isThemeDark: boolean;
+  storedTheme = localStorage.getItem("data-theme");
 
   constructor(
     private themeService: ThemeToggleService
@@ -57,7 +58,8 @@ export class AppComponent {
 
   ngOnInit(){
     this.windowSize = window.innerWidth;
-    this.isThemeDark = this.themeService.isThemeDark;
+    this.isThemeDark = this.storedTheme == "true" ? true : false;
+    this.themeService.setDarkTheme(this.isThemeDark);    
   }
 
   toggleDarkTheme(checked){
