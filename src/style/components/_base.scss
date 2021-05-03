@@ -25,17 +25,15 @@ button{
 }
 
 #resumePreview{
-    width: 17em;
-    height: 22em;
+    width: 20em;
+    height: 30em;
     
     @media (min-width: $mobile){
-        width: 20em;
-        height: 25em;
+        width: 35em;
+        height: 50em;
     }
     @media (min-width: $tablet){
-        width: 45em;
-        height: 45em;
+        width: 40em;
+        height: 60em;
     } 
-
-
 }
